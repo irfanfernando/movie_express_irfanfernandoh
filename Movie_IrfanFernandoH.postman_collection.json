@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "7c869c6f-3e33-4cfe-8914-9e29f1a29fdd",
+		"name": "Movie_IrfanFernandoH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49200618",
+		"_collection_link": "https://irfanfernando-4550908.postman.co/workspace/Irfan-Fernando-Halim's-Workspac~dc875d2d-bead-4d98-8859-aad0cfd621fc/collection/49200618-7c869c6f-3e33-4cfe-8914-9e29f1a29fdd?action=share&source=collection_link&creator=49200618"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"username\": \"irfan\", \"email\": \"irfan@test.com\", \"password\": \"123456\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjkyNmU3NTE2ZGQ0NTkyYzYwMTJjNDBjIiwidXNlcm5hbWUiOiJpcmZhbiIsImlhdCI6MTc2NDE1NzM1NSwiZXhwIjoxNzY0MTU4MjU1fQ.L19Bx4j5QC8yhgtYZ1_98xgvQSl766fhhpZ-9kkGXO8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"email\": \"irfan@test.com\", \"password\": \"123456\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
